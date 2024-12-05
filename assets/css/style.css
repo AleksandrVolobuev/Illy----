@@ -414,6 +414,32 @@ body {
 
 
 
+/*form*/
+
+.comment-list {
+  list-style: none;
+  padding: 0;
+}
+.comment-item {
+  padding: 5px;
+  margin: 5px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.comment-item {
+  margin-bottom: 10px;
+}
+
+.comment-number {
+  font-weight: bold;
+}
+
+.comment-text {
+  margin-left: 10px;
+}
+
+
 
 
 .tooltip {
