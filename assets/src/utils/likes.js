@@ -8,11 +8,15 @@ function likeHandler(e) {
     // Проверяем, есть ли "9" в тексте и заменяем ее на "10"
     if (likesP.textContent.includes("9")) {
         likesP.textContent = likesP.textContent.replace("9", "10");
+        likesImg.setAttribute("src","./assets/img/svg/icon-heart-dark-added.svg")
     } else if(likesP.textContent.includes("10")){
         likesP.textContent = likesP.textContent.replace("10", "9");
+        likesImg.setAttribute("src","./assets/img/svg/icon-heart-dark.svg")
     } else {
         console.warn("Число 9 не найдено в тексте.");
     }
+
+    
 }
 
 // Добавляем EventListener корректно
