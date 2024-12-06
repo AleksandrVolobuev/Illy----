@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>rendering</title>
+    <link rel="stylesheet" href="./assets/css/resset.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <script src="./assets/src/utils/createElement.js" defer></script>
+    <script src="./assets/src/utils/tooltip.js" defer></script>
+    <script src="./assets/src/index.js" defer></script>
+    <script src="./assets/src/utils/theme _button.js" defer></script>
+    <script src="./assets/src/utils/form.js" defer></script>
+    <script src="./assets/src/utils/renderListProject.js" defer></script>
+  </head>
+  <body class="body" data-theme="biruza">
+    <section class="heder" data-theme="white">
+      <div class="div-logo-heder">
+        <a href="./index.html" class="return-main-page">На головну</a>
+        <div class="tem">
+          <button class="btn-tem" data-theme="white">Змінити тему</button>
+        </div>
+      </div>
+    </section>
+    <section class="main">
+      <h1 class="h1" data-theme="biruza">Підпишиться на нашу розсилку</h1>
+      <section class="lebel-brauzer violent" data-theme="biruza">
+        <img
+          class="ok"
+          src="./assets/img/svg/icon-ok-light.svg"
+          alt="icon-ok-light"
+        />
+        <p>Який <strong> нетямущий </strong> браузер!</p>
+      </section>
+
+      <form class="email" data-theme="biruza" data-name="coment" name="coment">
+        <label class="label" data-theme="biruza" for="email">email</label>
+        <div class="coment1" data-theme="white">
+          <input
+            class="input"
+            type="email"
+            data-theme="white"
+            placeholder="kompscholl@gmail.com"
+          />
+          <button type="submit" class="btn-sabmit">Підписатися</button>
+        </div>
+      </form>
+
+      <section class="content" data-theme="white">
+        <h2 class="h2">Або почитайте ще трохи новин</h2>
+        <div class="new-grid">
+          <div class="news clickable news-flex" data-url="./second.html">
+              <img
+                class="img-flex-news"
+                src="./assets/img/jpg/new-graph.jpg"
+                alt=""/>
+          
+            <div class="div-block-text">
+              <h3 class="h3-grid">Нова бібліотека для створення графіків</h3>
+              <p class="par-grid">
+                Тепер можна створити дашборд за лічені секунди.
+              </p>
+              <div class="div-block-giid">
+                <div class="block-link">#IT</div>
+                <div class="text-data">16 жовтня 2024</div>
+              </div>
+            </div>
+          </div>
+          <div class="news clickable news-flex" data-url="./second.html">
+           
+              <img
+                class="img-flex-news"
+                src="./assets/img/jpg/new-robot.jpg"
+                alt=""
+              />
+            
+            <div class="div-block-text">
+              <h3 class="h3-grid">А що там у роботів</h3>
+              <p class="par-grid">
+                ТУ робототехниці відбувається багато цікавого,ця новина могла б
+                бути про це ,але ні.
+              </p>
+              <div class="div-block-giid">
+                <div class="block-link">#Ігри</div>
+                <div class="text-data">16 жовтня 2024</div>
+              </div>
+            </div>
+          </div>
+          <div class="news clickable news-flex" data-url="http://google.com">
+         
+              <img
+                class="img-flex-news"
+                src="./assets/img/jpg/new-loop.jpg"
+                alt=""
+              />
+            
+            <div class="div-block-text">
+              <h3 class="h3-grid">Нескінченні цикли час зв'язувати з цим</h3>
+              <p class="par-grid">
+                Британські вчені з'ясували, що робота ПЗ безпосередньо залежить
+                від  наявності в ньому нескінченних циклів.
+              </p>
+              <div class="div-block-giid">
+                <div class="block-link">#HR</div>
+                <div class="text-data">16 жовтня 2024</div>
+              </div>
+            </div>
+          </div>
+          <div class="news clickable news-flex" data-url="./second.html">
+           
+              <img
+                class="img-flex-news"
+                src="./assets/img/jpg/new-drone.jpg"
+                alt=""
+              />
+            
+            <div class="div-block-text">
+              <h3 class="h3-grid">Шок! секретні кадри з дрона-розвідника</h3>
+              <p class="par-grid">
+                Ніхто не очікував, що за стінами відбудеться ТАКЕ
+              </p>
+              <div class="div-block-giid">
+                <div class="block-link"></div>
+                <div class="text-data">16 жовтня 2024</div>
+              </div>
+            </div>
+          </div>
+          <div class="news clickable news-flex" data-url="./second.html">
+            
+              <img class="img-flex-news" src="./assets/img/jpg/new-research.jpg" alt="">
+            
+            <div class="div-block-text">
+              <h3 class="h3-grid">Зі світу психології</h3>
+              <p class="par-grid">Дослідження показують, що і роботи більше можна зробити більше.</p>
+              <div class="div-block-giid">
+                <div class="block-link"></div>
+                <div class="text-data">16 жовтня 2024</div>
+              </div>
+            </div>
+          </div>
+
+
+      </section>
+    </section>
+    <section class="futer">
+      <div class="div-logo-futer">
+        <div class="w-layout-hflex block-name">Flex News</div>
+        <img
+          class="img-svg-futer"
+          src="./assets/img/svg/white-logo.svg"
+          alt=""
+        />
+      </div>
+    </section>
+    <script></script>
+  </body>
+</html>

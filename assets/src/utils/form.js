@@ -12,6 +12,7 @@ function submitHandler(e) {
   // Получаем значение комментария и обрезаем лишние пробелы
   const inputValue = e.currentTarget.querySelector("input").value.trim();
 
+  //console.dir(e.currentTarget);
   // Проверяем, не пустое ли поле
   if (inputValue) {
     // Увеличиваем счётчик комментариев
