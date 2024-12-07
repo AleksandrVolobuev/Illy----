@@ -33,19 +33,131 @@ body {
 
 .div-logo-heder {
   display: flex;
+  align-items: flex-start;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+  /*align-items: stretch;*/
   max-width: var(--900);
   margin-top: auto;
   margin-right: auto;
   margin-left: auto;
   padding: 10px;
 
-  flex-direction: row;
-  justify-content: flex-start;
-  flex-wrap: nowrap;
-  align-items: stretch;
+ 
 
   font-size: 16px;
 }
+
+.header_nav {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  position: relative;
+  width: 50%;
+ }
+
+
+ .imgBtn{
+  width: 40px;
+  height: 40px;
+ }
+ 
+ .list {
+  display: none;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  transform: scale(0.8);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+  left: 400px;
+
+}
+ .rotate {
+  transform: rotate(90deg);
+ }
+ .active {
+  position: absolute;
+  background-color: #1b0275;
+  color:black;
+  opacity: 0.8;
+ 
+  top: 900%;
+  left: 0%;
+  width: 800px;
+  height: 700px;
+  background: rgba(255, 255, 255, 0.3); /* Полупрозрачный белый */
+  backdrop-filter: blur(10px); /* Размытие */
+  border: 1px solid rgba(255, 255, 255, 0.4); /* Граница для красоты */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Легкая тень */
+  border-radius: 10px; /* Скругленные углы */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transform: translate(-50%, -50%) scale(1);
+ flex-direction: column;
+  align-items: center;
+  /*animation: fadeIn 1s ease-out 2s forwards;*/
+  animation: fadeIn 0.5s ease-out forwards;
+ }
+ @keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(0.8);
+  }
+  100% {
+    opacity: 0.8;
+    transform: translate(-50%, -50%) scale(1);
+  }
+}
+
+
+
+
+ .item:not(:last-child) {
+  margin-bottom: 20px;
+ }
+ 
+
+ .link {
+  text-decoration: none;
+  font-size: 16px;
+  transition: color 0.3s ease;
+  font-size: 32px;
+  transition: color 0.3s ease, transform 0.3s ease;
+ }
+ 
+ 
+ .link:hover {
+  color: #a51ef3;
+  transform: scale(1.5);
+  text-decoration: underline solid #a51ef3;
+ }
+ 
+ 
+ .logo {
+  font-family: "Arial Black", sans-serif;
+  font-size: 28px;
+  background: linear-gradient(90deg, #1e90ff, #00bfff);
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  padding: 10px 10px;
+  border: 2px solid #1e90ff;
+  border-radius: 8px;
+  text-decoration: none;
+  color: #fff;
+ }
+ .btn-navigechen {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.5s ease;
+ }
+ 
+ 
+
 
 .img-logo {
   margin-right: auto;
@@ -547,97 +659,14 @@ top: 0px;
 
 
 
-body {
-  margin: 0;
-  font-family: Arial, sans-serif;
- }
- /* .heder {
-  background-color: #daecff;
-  padding: 30px 20px;
-  display: flex;
-  justify-content: space-between; */
- /* } */
- .header_nav {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  color: #fff;
-  position: relative;
-  width: 50%;
- }
- 
- 
- .header_nav {
-  width: 40px;
-  height: 40px;
- }
 
- .img {
-  width: 40px;
-  height: 40px;
- }
+
  
+
+
+
  
- .list {
-  display: none;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  transform: scale(0.8);
-  transition: opacity 0.5s ease, transform 0.5s ease;
- }
- .active {
-  position: absolute;
-  top: 30%;
-  left: 0%;
-  transform: translate(-50%, -50%) scale(1);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
- }
- .item:not(:last-child) {
-  margin-bottom: 20px;
- }
+
+
  
- 
- .link {
-  text-decoration: none;
-  color: #fff;
-  font-size: 16px;
-  transition: color 0.3s ease;
-  font-size: 32px;
-  transition: color 0.3s ease, transform 0.3s ease;
- }
- 
- 
- .link:hover {
-  color: #1e90ff;
-  transform: scale(1.1);
- }
- 
- 
- .logo {
-  font-family: "Arial Black", sans-serif;
-  font-size: 28px;
-  background: linear-gradient(90deg, #1e90ff, #00bfff);
-  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  padding: 10px 10px;
-  border: 2px solid #1e90ff;
-  border-radius: 8px;
-  text-decoration: none;
-  color: #fff;
- }
- .bthhh {
-  background-color: transparent;
-  border: none;
-  cursor: pointer;
-  transition: transform 0.5s ease;
- }
- 
- 
- .rotate {
-  transform: rotate(90deg);
- }
  
