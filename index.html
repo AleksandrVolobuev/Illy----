@@ -13,53 +13,6 @@
     <script src="./assets/src/utils/header.js" defer></script>
     <script src="./assets/src/utils/up_button" defer></script>
     <script src="./assets/src/utils/button_dropdown.js" defer></script>
-    <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        const allNews = document.querySelectorAll(".news");
-        const dropdownItems = document.querySelectorAll(".dropdown-menu a");
-        const gridNews = document.querySelector(".grid-news");
-        const btnList = document.querySelector(".btn-list");
-        const btnTile = document.querySelector(".btn-title");
-
-        // Переключение между плиткой и списком
-        btnTile.addEventListener("click", function () {
-          gridNews.classList.remove("list-view");
-          gridNews.classList.add("tile-view");
-        });
-
-        btnList.addEventListener("click", function () {
-          gridNews.classList.remove("tile-view");
-          gridNews.classList.add("list-view");
-        });
-
-        // Фильтрация новостей по категории
-        dropdownItems.forEach(item => {
-          item.addEventListener("click", function (e) {
-            e.preventDefault();
-            const category = e.target.getAttribute("data-category");
-
-            // Отображаем все новости, если выбрана категория "Всі"
-            if (category === "all") {
-              allNews.forEach(news => {
-                news.style.display = "block";
-              });
-            } else {
-              allNews.forEach(news => {
-                // Получаем категорию новости
-                const newsCategory = news.querySelector(".block-link").textContent.toLowerCase();
-
-                // Показываем только те новости, которые соответствуют выбранной категории
-                if (newsCategory.includes(category)) {
-                  news.style.display = "block";
-                } else {
-                  news.style.display = "none";
-                }
-              });
-            }
-          });
-        });
-      });
-    </script>
   </head>
   <body class="body">
     <header class="heder">

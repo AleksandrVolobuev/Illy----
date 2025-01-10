@@ -1,11 +1,45 @@
-document.querySelector('.btn-news').addEventListener('click', function () {
-  const dropdownMenu = this.nextElementSibling;
-  dropdownMenu.style.display = dropdownMenu.style.display === 'block' ? 'none' : 'block';
-});
+document.addEventListener("DOMContentLoaded", function () {
+  const allNews = document.querySelectorAll(".news");
+  const dropdownItems = document.querySelectorAll(".dropdown-menu a");
+  const gridNews = document.querySelector(".grid-news");
+  const btnList = document.querySelector(".btn-list");
+  const btnTile = document.querySelector(".btn-title");
 
-document.addEventListener('click', function (event) {
-  const dropdown = document.querySelector('.dropdown');
-  if (!dropdown.contains(event.target)) {
-    document.querySelector('.dropdown-menu').style.display = 'none';
-  }
+  // Переключение между плиткой и списком
+  btnTile.addEventListener("click", function () {
+    gridNews.classList.remove("list-view");
+    gridNews.classList.add("tile-view");
+  });
+
+  btnList.addEventListener("click", function () {
+    gridNews.classList.remove("tile-view");
+    gridNews.classList.add("list-view");
+  });
+
+  // Фильтрация новостей по категории
+  dropdownItems.forEach(item => {
+    item.addEventListener("click", function (e) {
+      e.preventDefault();
+      const category = e.target.getAttribute("data-category");
+
+      // Убираем класс 'hidden' с всех новостей
+      allNews.forEach(news => {
+        news.classList.remove("hidden");
+      });
+
+      // Фильтрация новостей
+      if (category === "all") {
+        return; // Показываем все новости
+      }
+
+      allNews.forEach(news => {
+        const newsCategory = news.querySelector(".block-link").textContent.toLowerCase();
+
+        // Если категория не совпадает, скрываем новость
+        if (!newsCategory.includes(category)) {
+          news.classList.add("hidden");
+        }
+      });
+    });
+  });
 });
