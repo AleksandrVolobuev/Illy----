@@ -4,17 +4,62 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>rendering</title>
-    <!--<script src="./assets/src/date.js" defer></script>-->
     <link rel="stylesheet" href="./assets/css/resset.css" />
     <link rel="stylesheet" href="./assets/css/style.css" />
     <script src="./assets/src/utils/createElement.js" defer></script>
     <script src="./assets/src/utils/tooltip.js" defer></script>
     <script src="./assets/src/index.js" defer></script>
-    <!--<script src="./assets/src/utils/theme _button.js" defer></script>-->
-  <script src="./assets/src/utils/renderListProject.js" defer></script>
-  <script src="./assets/src/utils/header.js" defer></script>
-  <script src="./assets/src/utils/up_button" defer></script>
-  <script src="./assets/src/utils/button_dropdown.js" defer></script>
+    <script src="./assets/src/utils/renderListProject.js" defer></script>
+    <script src="./assets/src/utils/header.js" defer></script>
+    <script src="./assets/src/utils/up_button" defer></script>
+    <script src="./assets/src/utils/button_dropdown.js" defer></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const allNews = document.querySelectorAll(".news");
+        const dropdownItems = document.querySelectorAll(".dropdown-menu a");
+        const gridNews = document.querySelector(".grid-news");
+        const btnList = document.querySelector(".btn-list");
+        const btnTile = document.querySelector(".btn-title");
+
+        // Переключение между плиткой и списком
+        btnTile.addEventListener("click", function () {
+          gridNews.classList.remove("list-view");
+          gridNews.classList.add("tile-view");
+        });
+
+        btnList.addEventListener("click", function () {
+          gridNews.classList.remove("tile-view");
+          gridNews.classList.add("list-view");
+        });
+
+        // Фильтрация новостей по категории
+        dropdownItems.forEach(item => {
+          item.addEventListener("click", function (e) {
+            e.preventDefault();
+            const category = e.target.getAttribute("data-category");
+
+            // Отображаем все новости, если выбрана категория "Всі"
+            if (category === "all") {
+              allNews.forEach(news => {
+                news.style.display = "block";
+              });
+            } else {
+              allNews.forEach(news => {
+                // Получаем категорию новости
+                const newsCategory = news.querySelector(".block-link").textContent.toLowerCase();
+
+                // Показываем только те новости, которые соответствуют выбранной категории
+                if (newsCategory.includes(category)) {
+                  news.style.display = "block";
+                } else {
+                  news.style.display = "none";
+                }
+              });
+            }
+          });
+        });
+      });
+    </script>
   </head>
   <body class="body">
     <header class="heder">
@@ -40,32 +85,26 @@
       <div class="div-btn">
         <button class="btn-list violent">Список</button>
         <button class="btn-title">Плитка</button>
-        <!--<a href="#" class="btn-title w-button">Плитка</a>-->
-        <!-- <button class="btn-news" data-tooltip=" тут має бути #">Всі новини</button> -->
         <div class="dropdown">
           <button class="btn-news">Всі новини</button>
           <ul class="dropdown-menu">
             <li><a href="#" data-category="all">Всі</a></li>
             <li><a href="#" data-category="ігри">Ігри</a></li>
             <li><a href="#" data-category="психологія">Психологія</a></li>
-            <li><a href="#" data-category="технології">Технології</a></li>
+            <li><a href="#" data-category="it">IT</a></li>
+            <li><a href="#" data-category="hr">HR</a></li>
+            <li><a href="#" data-category="дрони">Дрони</a></li>
           </ul>
         </div>
       </div>
-      <div class="grid-news">
+      <div class="grid-news tile-view">
         <div class="news clickable" data-url="./second.html">
           <div class="div-img">
-            <img
-              class="img-blok-grid"
-              src="./assets/img/jpg/new-graph.jpg"
-              alt=""
-            />
+            <img class="img-blok-grid" src="./assets/img/jpg/new-graph.jpg" alt="" />
           </div>
           <div class="div-block-text">
             <h3 class="h3-grid">Нова бібліотека для створення графіків</h3>
-            <p class="par-grid">
-              Тепер можна створити дашборд за лічені секунди.
-            </p>
+            <p class="par-grid">Тепер можна створити дашборд за лічені секунди.</p>
             <div class="div-block-giid">
               <div class="block-link">#IT</div>
               <div class="text-data">16 жовтня 2024</div>
@@ -74,18 +113,11 @@
         </div>
         <div class="news clickable" data-url="./second.html">
           <div class="div-img">
-            <img
-              class="img-blok-grid"
-              src="./assets/img/jpg/new-robot.jpg"
-              alt=""
-            />
+            <img class="img-blok-grid" src="./assets/img/jpg/new-robot.jpg" alt="" />
           </div>
           <div class="div-block-text">
             <h3 class="h3-grid">А що там у роботів</h3>
-            <p class="par-grid">
-              ТУ робототехниці відбувається багато цікавого,ця новина могла б
-              бути про це ,але ні.
-            </p>
+            <p class="par-grid">ТУ робототехниці відбувається багато цікавого,ця новина могла б бути про це ,але ні.</p>
             <div class="div-block-giid">
               <div class="block-link">#Ігри</div>
               <div class="text-data">16 жовтня 2024</div>
@@ -94,18 +126,11 @@
         </div>
         <div class="news clickable" data-url="http://google.com">
           <div class="div-img">
-            <img
-              class="img-blok-grid"
-              src="./assets/img/jpg/new-loop.jpg"
-              alt=""
-            />
+            <img class="img-blok-grid" src="./assets/img/jpg/new-loop.jpg" alt="" />
           </div>
           <div class="div-block-text">
             <h3 class="h3-grid">Нескінченні цикли час зв'язувати з цим</h3>
-            <p class="par-grid">
-              Британські вчені з'ясували, що робота ПЗ безпосередньо залежить
-              від  наявності в ньому нескінченних циклів.
-            </p>
+            <p class="par-grid">Британські вчені з'ясували, що робота ПЗ безпосередньо залежить від наявності в ньому нескінченних циклів.</p>
             <div class="div-block-giid">
               <div class="block-link">#HR</div>
               <div class="text-data">16 жовтня 2024</div>
@@ -114,11 +139,7 @@
         </div>
         <div class="news clickable" data-url="./second.html">
           <div class="div-img">
-            <img
-              class="img-blok-grid"
-              src="./assets/img/jpg/new-drone.jpg"
-              alt=""
-            />
+            <img class="img-blok-grid" src="./assets/img/jpg/new-drone.jpg" alt="" />
           </div>
           <div class="div-block-text">
             <h3 class="h3-grid">Шок! секретні кадри з дрона-розвідника</h3>
@@ -128,10 +149,10 @@
               <div class="text-data">16 жовтня 2024</div>
             </div>
           </div>
-        </div> 
+        </div>
         <div class="news clickable" data-url="./second.html">
           <div class="div-img">
-            <img class="img-blok-grid" src="./assets/img/jpg/new-research.jpg" alt="">
+            <img class="img-blok-grid" src="./assets/img/jpg/new-research.jpg" alt="" />
           </div>
           <div class="div-block-text">
             <h3 class="h3-grid">Зі світу психології</h3>
@@ -151,7 +172,5 @@
       </div>
     </section>
     <button class="up-button">↑</button>
-
-
   </body>
 </html>

@@ -160,7 +160,7 @@ body {
 }
 
 .btn-list {
-  padding: 15px 5px;
+  padding: 5px 25px;
   padding-left: 40px;
   border-radius: 25px;
   background-image: url(../img/svg/rows-light-checked.svg);
@@ -175,7 +175,7 @@ body {
 }
 
 .btn-title {
-  padding: 15px 5px;
+  padding: 5px 25px;
   padding-left: 40px;
   border-top-style: solid;
   border: 2px solid var(--vailet);
@@ -198,9 +198,9 @@ body {
 
 .btn-news {
   margin-left: auto;
-  padding-top: 15px;
+  padding-top: 5px;
   padding-right: 30px;
-  padding-bottom: 15px;
+  padding-bottom: 5px;
   background-color: var(--vailet);
   background-image: url(../img/svg/down_white.svg);
   background-position: 92% 50%;
@@ -210,7 +210,7 @@ body {
   font-size: 20px;
 }
 
-.grid-news {
+.grid-news.list-view {
   padding: 0px 10px 0px 10px;
   display: grid;
   grid-template-columns: 1fr;
@@ -641,6 +641,7 @@ body {
 .dropdown {
   position: relative;
   display: inline-block;
+  margin-left: auto;
 }
 
 .dropdown-menu {
@@ -672,4 +673,15 @@ body {
 
 .dropdown:hover .dropdown-menu {
   display: block;
+}
+
+
+
+
+
+.grid-news.tile-view {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+  font-family: Arial, sans-serif;
 }
