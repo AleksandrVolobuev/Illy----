@@ -10,6 +10,7 @@ themeButton.addEventListener("click", () => {
   themeElements.forEach((element) => {
     const currentTheme = element.dataset.theme; // Получаем текущее значение data-theme
 
+
     // Переключаем классы в зависимости от текущего значения data-theme
     if (currentTheme === "biruza") {
       element.classList.remove("biruza");
@@ -27,6 +28,13 @@ themeButton.addEventListener("click", () => {
       element.classList.remove("white");
       element.classList.add("black-grey");
       element.dataset.theme = "black-grey"; // Обновляем data-theme на "black-grey"
+    }else if (currentTheme === "violent") {
+      element.classList.remove("violent");
+      element.classList.add("no-violent");
+      element.dataset.theme = "no-violent";     }else if (currentTheme === "no-violent") {
+      element.classList.remove("no-violent");
+      element.classList.add("violent");
+      element.dataset.theme = "violent"; 
     }
   });
 });
