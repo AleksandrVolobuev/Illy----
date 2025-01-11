@@ -12,19 +12,22 @@
     <script src="./assets/src/utils/theme _button.js" defer></script>
     <script src="./assets/src/utils/form.js" defer></script>
     <script src="./assets/src/utils/renderListProject.js" defer></script>
+    <script src="./assets/src/utils/up_button" defer></script>
   </head>
   <body class="body" data-theme="biruza">
-    <section class="heder" data-theme="white">
+    <header class="heder" data-theme="white">
       <div class="div-logo-heder">
-        <a href="./index.html" class="return-main-page">На головну</a>
+        <a href="./index.html" class="return-main-page" data-theme="white"
+          >На головну</a
+        >
         <div class="tem">
           <button class="btn-tem" data-theme="white">Змінити тему</button>
         </div>
       </div>
-    </section>
+    </header>
     <section class="main">
       <h1 class="h1" data-theme="biruza">Підпишиться на нашу розсилку</h1>
-      <section class="lebel-brauzer violent" data-theme="biruza">
+      <section class="lebel-brauzer" >
         <img
           class="ok"
           src="./assets/img/svg/icon-ok-light.svg"
@@ -42,19 +45,22 @@
             data-theme="white"
             placeholder="kompscholl@gmail.com"
           />
-          <button type="submit" class="btn-sabmit">Підписатися</button>
+          <button type="submit" class="btn-sabmit" data-theme="violent">
+            Підписатися
+          </button>
         </div>
       </form>
 
-      <section class="content" data-theme="white">
+      <section class="content" data-theme="biruza">
         <h2 class="h2">Або почитайте ще трохи новин</h2>
         <div class="new-grid">
-          <div class="news clickable news-flex" data-url="./second.html">
-              <img
-                class="img-flex-news"
-                src="./assets/img/jpg/new-graph.jpg"
-                alt=""/>
-          
+          <div class="news clickable news-flex" data-url="./second.html" data-theme="white">
+            <img
+              class="img-flex-news"
+              src="./assets/img/jpg/new-graph.jpg"
+              alt=""
+            />
+
             <div class="div-block-text">
               <h3 class="h3-grid">Нова бібліотека для створення графіків</h3>
               <p class="par-grid">
@@ -66,14 +72,12 @@
               </div>
             </div>
           </div>
-          <div class="news clickable news-flex" data-url="./second.html">
-           
-              <img
-                class="img-flex-news"
-                src="./assets/img/jpg/new-robot.jpg"
-                alt=""
-              />
-            
+          <div class="news clickable news-flex" data-url="./second.html" data-theme="white">
+            <img
+              class="img-flex-news"
+              src="./assets/img/jpg/new-robot.jpg"
+              alt=""
+            />
             <div class="div-block-text">
               <h3 class="h3-grid">А що там у роботів</h3>
               <p class="par-grid">
@@ -86,14 +90,12 @@
               </div>
             </div>
           </div>
-          <div class="news clickable news-flex" data-url="http://google.com">
-         
-              <img
-                class="img-flex-news"
-                src="./assets/img/jpg/new-loop.jpg"
-                alt=""
-              />
-            
+          <div class="news clickable news-flex" data-url="http://google.com" data-theme="white">
+            <img
+              class="img-flex-news"
+              src="./assets/img/jpg/new-loop.jpg"
+              alt=""
+            />
             <div class="div-block-text">
               <h3 class="h3-grid">Нескінченні цикли час зв'язувати з цим</h3>
               <p class="par-grid">
@@ -106,45 +108,48 @@
               </div>
             </div>
           </div>
-          <div class="news clickable news-flex" data-url="./second.html">
-           
-              <img
-                class="img-flex-news"
-                src="./assets/img/jpg/new-drone.jpg"
-                alt=""
-              />
-            
+          <div class="news clickable news-flex" data-url="./second.html" data-theme="white">
+            <img
+              class="img-flex-news"
+              src="./assets/img/jpg/new-drone.jpg"
+              alt=""
+            />
+
             <div class="div-block-text">
               <h3 class="h3-grid">Шок! секретні кадри з дрона-розвідника</h3>
               <p class="par-grid">
                 Ніхто не очікував, що за стінами відбудеться ТАКЕ
               </p>
               <div class="div-block-giid">
-                <div class="block-link"></div>
+                <div class="block-link">#ДРОНИ</div>
                 <div class="text-data">16 жовтня 2024</div>
               </div>
             </div>
           </div>
-          <div class="news clickable news-flex" data-url="./second.html">
-            
-              <img class="img-flex-news" src="./assets/img/jpg/new-research.jpg" alt="">
-            
+          <div class="news clickable news-flex" data-url="./second.html" data-theme="white">
+            <img
+              class="img-flex-news"
+              src="./assets/img/jpg/new-research.jpg"
+              alt=""
+            />
+
             <div class="div-block-text">
               <h3 class="h3-grid">Зі світу психології</h3>
-              <p class="par-grid">Дослідження показують, що і роботи більше можна зробити більше.</p>
+              <p class="par-grid">
+                Дослідження показують, що і роботи більше можна зробити більше.
+              </p>
               <div class="div-block-giid">
-                <div class="block-link"></div>
+                <div class="block-link">#ПСИХОЛОГІЯ</div>
                 <div class="text-data">16 жовтня 2024</div>
               </div>
             </div>
           </div>
-
-
+        </div>
       </section>
     </section>
-    <section class="futer">
+    <footer class="futer" data-theme="white">
       <div class="div-logo-futer">
-        <div class="w-layout-hflex block-name">Flex News</div>
+        <div class="w-layout-hflex block-name">© 2024 Flash News. Всі права захищені.</div>
         <img
           class="img-svg-futer"
           src="./assets/img/svg/white-logo.svg"
@@ -152,6 +157,6 @@
         />
       </div>
     </section>
-    <script></script>
+    <button class="up-button">↑</button>
   </body>
 </html>

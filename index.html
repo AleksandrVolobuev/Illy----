@@ -4,40 +4,56 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>rendering</title>
-    <!--<script src="./assets/src/date.js" defer></script>-->
     <link rel="stylesheet" href="./assets/css/resset.css" />
     <link rel="stylesheet" href="./assets/css/style.css" />
     <script src="./assets/src/utils/createElement.js" defer></script>
     <script src="./assets/src/utils/tooltip.js" defer></script>
     <script src="./assets/src/index.js" defer></script>
-    <!--<script src="./assets/src/utils/theme _button.js" defer></script>-->
-  <script src="./assets/src/utils/renderListProject.js" defer></script>
-  
+    <script src="./assets/src/utils/renderListProject.js" defer></script>
+    <script src="./assets/src/utils/header.js" defer></script>
+    <script src="./assets/src/utils/up_button" defer></script>
+    <script src="./assets/src/utils/button_dropdown.js" defer></script>
   </head>
   <body class="body">
-    <section class="heder">
+    <header class="heder">
       <div class="div-logo-heder">
         <img class="img-logo" src="./assets/img/svg/main-logo.svg" alt="" />
-
-        <img
-          class="img-svg" data-tooltip=" тут має бути списоок"
-          src="./assets/img/svg/menu-open-light.svg"
-          alt=""
-        />
+        <nav class="header_nav">
+          <button type="button" class="btn-navigechen">
+            <img
+              src="./assets/img/svg/menu-open-light.svg"
+              alt="menu"
+              class="imgBtn"
+            />
+          </button>
+          <ul class="list">
+            <li class="item link"><a href="./index.html" class="link">Головна</a></li>
+            <li class="item link"><a href="./second.html" class="link">Розсилка</a></li>
+            <li class="item link"><a href="./third.html" class="link">Контакти</a></li>
+          </ul>
+        </nav>
       </div>
-    </section>
+    </header>
     <div class="wraper">
       <div class="div-btn">
-        <button class="btn-list">Список</button>
-        <!--<a href="#" class="btn-list w-button">Список</a>-->
+        <button class="btn-list violent">Список</button>
         <button class="btn-title">Плитка</button>
-        <!--<a href="#" class="btn-title w-button">Плитка</a>-->
-        <button class="btn-news" data-tooltip=" тут має бути #">Всі новини</button>
+        <div class="dropdown">
+          <button class="btn-news">Всі новини</button>
+          <ul class="dropdown-menu">
+            <li><a href="#" data-category="all">Всі</a></li>
+            <li><a href="#" data-category="ігри">Ігри</a></li>
+            <li><a href="#" data-category="психологія">Психологія</a></li>
+            <li><a href="#" data-category="it">IT</a></li>
+            <li><a href="#" data-category="hr">HR</a></li>
+            <li><a href="#" data-category="дрони">Дрони</a></li>
+          </ul>
+        </div>
       </div>
-      <div class="grid-news">
+      <div class="grid-news tile-view">
         <div class="news clickable" data-url="./second.html">
           <div class="div-img">
-            <img class="img-blok-grid" src="./assets/img/jpg/new-graph.jpg" alt="">
+            <img class="img-blok-grid" src="./assets/img/jpg/new-graph.jpg" alt="" />
           </div>
           <div class="div-block-text">
             <h3 class="h3-grid">Нова бібліотека для створення графіків</h3>
@@ -47,11 +63,10 @@
               <div class="text-data">16 жовтня 2024</div>
             </div>
           </div>
-          
         </div>
         <div class="news clickable" data-url="./second.html">
           <div class="div-img">
-            <img class="img-blok-grid" src="./assets/img/jpg/new-robot.jpg" alt="">
+            <img class="img-blok-grid" src="./assets/img/jpg/new-robot.jpg" alt="" />
           </div>
           <div class="div-block-text">
             <h3 class="h3-grid">А що там у роботів</h3>
@@ -64,70 +79,51 @@
         </div>
         <div class="news clickable" data-url="http://google.com">
           <div class="div-img">
-            <img class="img-blok-grid" src="./assets/img/jpg/new-loop.jpg" alt="">
+            <img class="img-blok-grid" src="./assets/img/jpg/new-loop.jpg" alt="" />
           </div>
           <div class="div-block-text">
             <h3 class="h3-grid">Нескінченні цикли час зв'язувати з цим</h3>
-            <p class="par-grid">Британські вчені з'ясували, що робота ПЗ безпосередньо залежить від  наявності в ньому нескінченних циклів.</p>
+            <p class="par-grid">Британські вчені з'ясували, що робота ПЗ безпосередньо залежить від наявності в ньому нескінченних циклів.</p>
             <div class="div-block-giid">
               <div class="block-link">#HR</div>
               <div class="text-data">16 жовтня 2024</div>
             </div>
           </div>
-        </div> 
+        </div>
         <div class="news clickable" data-url="./second.html">
           <div class="div-img">
-            <img class="img-blok-grid" src="./assets/img/jpg/new-drone.jpg" alt="">
+            <img class="img-blok-grid" src="./assets/img/jpg/new-drone.jpg" alt="" />
           </div>
           <div class="div-block-text">
             <h3 class="h3-grid">Шок! секретні кадри з дрона-розвідника</h3>
             <p class="par-grid">Ніхто не очікував, що за стінами відбудеться ТАКЕ</p>
             <div class="div-block-giid">
-              <div class="block-link"></div>
+              <div class="block-link">#ДРОНИ</div>
               <div class="text-data">16 жовтня 2024</div>
             </div>
           </div>
-        </div> 
+        </div>
         <div class="news clickable" data-url="./second.html">
           <div class="div-img">
-            <img class="img-blok-grid" src="./assets/img/jpg/new-research.jpg" alt="">
+            <img class="img-blok-grid" src="./assets/img/jpg/new-research.jpg" alt="" />
           </div>
           <div class="div-block-text">
             <h3 class="h3-grid">Зі світу психології</h3>
             <p class="par-grid">Дослідження показують, що і роботи більше можна зробити більше.</p>
             <div class="div-block-giid">
-              <div class="block-link"></div>
+              <div class="block-link">#ПСИХОЛОГІЯ</div>
               <div class="text-data">16 жовтня 2024</div>
             </div>
           </div>
         </div>
-         
       </div>
     </div>
     <section class="futer">
       <div class="div-logo-futer">
-        <div class="w-layout-hflex block-name">Flex News</div>
+        <div class="w-layout-hflex block-name">© 2024 Flash News. Всі права захищені.</div>
         <img class="img-svg-futer" src="./assets/img/svg/white-logo.svg" alt="">
       </div>
     </section>
-
-    <script>
-      'use strict'
-
-
-document.addEventListener('click', function(event) {
-  // Проверяем, содержит ли цель клика класс 'clickable'
-  if (event.target.classList.contains('clickable')) {
-    const url = event.target.getAttribute('data-url'); // Получаем URL из data-url
-    if (url) {
-      window.location.href = url; // Переход на страницу
-    } else {
-      console.error('URL не указан!');
-    }
-  }
-});
-
-
-    </script>
+    <button class="up-button">↑</button>
   </body>
 </html>
