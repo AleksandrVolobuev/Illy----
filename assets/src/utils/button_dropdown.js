@@ -7,13 +7,22 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // Переключение между плиткой и списком
   btnTile.addEventListener("click", function () {
+    btnTile.classList.add("btn-tile-light");
+    btnTile.classList.remove("btn-tile-dark");
     gridNews.classList.remove("list-view");
     gridNews.classList.add("tile-view");
+    btnList.classList.add("btn-list-dark");
+    btnList.classList.remove("btn-list-light");
   });
 
   btnList.addEventListener("click", function () {
     gridNews.classList.remove("tile-view");
     gridNews.classList.add("list-view");
+    btnList.classList.add("btn-list-light");
+    btnList.classList.remove("btn-list-dark");
+    btnTile.classList.add("btn-tile-dark");
+    btnTile.classList.remove("btn-tile-light");
+    
   });
 
   // Фильтрация новостей по категории

@@ -126,12 +126,24 @@ body {
   transition: transform 0.6s ease;
 }
 
+.img-a{
+  margin-right: auto;
+  margin-left: 0px;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+}
+
+
 .img-logo {
   margin-right: auto;
   margin-left: 0px;
   flex-grow: 0;
   flex-shrink: 1;
   flex-basis: auto;
+}
+.img-logo-margin{
+  margin-top: 10px;
 }
 
 .img-svg {
@@ -163,7 +175,6 @@ body {
   padding: 5px 25px;
   padding-left: 40px;
   border-radius: 25px;
-  background-image: url(../img/svg/rows-light-checked.svg);
   background-position: 15% 50%;
   background-size: 20px;
   background-repeat: no-repeat;
@@ -174,19 +185,42 @@ body {
   transform: scale(1.02);
 }
 
+.btn-list-dark{
+  background-image: url(../img/svg/rows-light.svg);
+  background-color: var(--biruza);
+  border: 2px solid var(--vailet);
+  color: black;
+}
+
+.btn-list-light{
+  background-image: url(../img/svg/rows-light-checked.svg);
+  color: white;
+  background-color: var(--vailet);
+  border: 1px solid black;
+}
+
 .btn-title {
   padding: 5px 25px;
   padding-left: 40px;
   border-top-style: solid;
-  border: 2px solid var(--vailet);
   border-radius: 25px;
-  background-color: var(--biruza);
-  background-image: url(../img/svg/tiles-light.svg);
   background-position: 15% 50%;
   background-size: 20px;
   background-repeat: no-repeat;
-  color: var(--vailet);
   font-size: 20px;
+}
+
+.btn-tile-dark{
+  background-image: url(../img/svg/tiles-light.svg);
+  background-color: var(--biruza);
+  border: 2px solid var(--vailet);
+  color: black;
+}
+
+.btn-tile-light{
+  background-image: url(../img/svg/tiles-light-checked.svg);
+  color: white;
+  background-color: var(--vailet);
 }
 
 .btn-title:hover,
@@ -382,7 +416,6 @@ body {
 
 .content {
   background-color: var(--color);
-  box-shadow: 9px 9px 12px 0 rgba(0, 0, 0, 0.2);
 }
 
 .div-imgRobot {
