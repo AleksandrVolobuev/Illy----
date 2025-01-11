@@ -15,14 +15,14 @@ themeButton.addEventListener("click", () => {
       element.dataset.theme = "black"; // Обновляем data-theme на "black"
       
       // Меняем картинку
-      imgLogo.src = "./assets/img/svg/main-logo.svg"; // Пример нового пути к картинке
+      // imgLogo.src = "./assets/img/svg/main-logo.svg"; // Пример нового пути к картинке
     } else if (currentTheme === "black") {
       element.classList.remove("black");
       element.classList.add("biruza");
       element.dataset.theme = "biruza"; // Обновляем data-theme на "biruza"
       
       // Меняем картинку
-      imgLogo.src = "./assets/img/svg/main-logo.svg"; // Возвращаем исходную картинку
+      // imgLogo.src = "./assets/img/svg/main-logo.svg"; // Возвращаем исходную картинку
     } else if (currentTheme === "black-grey") {
       element.classList.remove("black-grey");
       element.classList.add("white");
