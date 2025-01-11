@@ -12,11 +12,12 @@
     <script src="./assets/src/utils/theme _button.js" defer></script>
   <script src="./assets/src/utils/form.js" defer></script>
   <script src="./assets/src/utils/likes.js" defer></script>
+  <script src="./assets/src/utils/up_button" defer></script>
   </head>
   <body class="body " data-theme="biruza">
     <section class="heder "data-theme="white">
       <div class="div-logo-heder ">
-        <img class="img-logo" src="./assets/img/svg/main-logo.svg" alt="" />
+        <a href="./index.html" class="img-a" data-theme="white"><img class="img-logo img-logo-margin" src="./assets/img/svg/main-logo.svg" alt="" data-theme="white" /></a>
         <div class="tem">
           <button class="btn-tem " data-theme="white">Змінити тему</button>
         </div>
@@ -33,13 +34,13 @@
           alt="news-robot2"
         />
         <div class="info">
-          <div class="img-block">
+          <div class="img-block" data-theme="white">
             <img
               class="text-p"
               src="./assets/img/svg/icon-heart-dark.svg"
               alt="heart-dark"
             />
-            <div class="text-p">9</div>
+            <div class="text-p" v >9</div>
             <div class="text-2p">22 грудня 2019</div>
           </div>
           <p class="par">
@@ -58,13 +59,13 @@
         <label class="label" data-theme="biruza" for="text">Новий коментар</label>
         <div class="coment1" data-theme="white">
           <input class="input" type="text"data-theme="white" placeholder="коментар" data-tooltip=" тут напиши свій коментар"/>
-          <button type="submit" class="btn-sabmit">Відправити</button>
+          <button type="submit" class="btn-sabmit"data-theme="violent">Відправити</button>
         </div>
       </form>
     </section>
     <section class="futer">
       <div class="div-logo-futer">
-        <div class="w-layout-hflex block-name">Flex News</div>
+        <div class="w-layout-hflex block-name">© 2024 Flash News. Всі права захищені.</div>
         <img
           class="img-svg-futer"
           src="./assets/img/svg/white-logo.svg"
@@ -72,9 +73,6 @@
         />
       </div>
     </section>
-    <script>
-
-
-    </script>
+    <button class="up-button">↑</button>
   </body>
 </html>
