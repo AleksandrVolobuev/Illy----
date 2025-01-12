@@ -114,7 +114,6 @@ body {
 
 .link:hover,
 .return-main-page:hover {
-  /*color: #6552d2;*/
   transform: scale(1.5);
   text-decoration: underline solid #5a3ff3;
 }
@@ -300,7 +299,6 @@ body {
 }
 
 .block-link {
-  /* width: 72px; */
   height: auto;
   border-radius: 20px;
   background-color: var(--biruza);
@@ -347,8 +345,7 @@ body {
   margin-left: auto;
 }
 
-/* second
- */
+/*second*/
 
 .btn-tem {
   margin-left: auto;
@@ -605,16 +602,6 @@ body {
   object-fit: cover;
   border-bottom: 1px solid #ddd;
 }
-
-
-
-
-
-
- 
-
-
-
  
 .up-button {
   width: 50px;
@@ -635,7 +622,6 @@ body {
 .up-button.shown {
   display: block;
 }
-
  
  
 .dropdown {
@@ -675,18 +661,12 @@ body {
   display: block;
 }
 
-
-
-
-
-
 .grid-news.tile-view {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   gap: 20px;
   font-family: Arial, sans-serif;
 }
-
 
 .hidden {
   display: none !important;

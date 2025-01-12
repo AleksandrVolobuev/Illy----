@@ -21,8 +21,6 @@ function addMenu() {
 
     iconMenu.src = "./assets/img/svg/menu-open-light.svg"; // Змінити іконку на меню
 
-    //nav.style.height = "auto"; // Встановити висоту nav
-
     header.style.alignItems = "center"; // Вирівняти вміст header
 
     btn.classList.remove("rotate"); // Прибрати обертання кнопки
@@ -32,8 +30,6 @@ function addMenu() {
     list.classList.add("active"); // Додати клас active
 
     iconMenu.src = "./assets/img/jpg/photo_2024-12-07_11-29-00.jpg"; // Змінити іконку на закриття
-
-    //nav.style.height = "100vh"; // Зробити меню на весь екран
 
     header.style.alignItems = "flex-start"; // Вирівняти вміст header зверху
 
