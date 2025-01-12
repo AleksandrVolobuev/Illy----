@@ -227,7 +227,7 @@ body {
   display: flex;
   justify-content: flex-start;
   align-items: stretch;
-  line-height: 34px;
+  line-height: 1.5;
   cursor: pointer;
   padding: 20px;
   background-color: #fff;
@@ -275,7 +275,11 @@ body {
   width: auto;
   height: auto;
   max-width: 750px;
-  padding: 10px;
+  padding: 0 0 0 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
 }
 
 .h3-grid {
@@ -283,7 +287,7 @@ body {
 }
 
 .par-grid {
-  font-size: var(--20);
+  /*font-size: var(--20);*/
   font-weight: 400;
   text-align: left;
 }
@@ -600,7 +604,7 @@ body {
   object-fit: cover;
   border-bottom: 1px solid #ddd;
 }
- 
+
 .up-button {
   width: 50px;
   height: 50px;
@@ -620,8 +624,8 @@ body {
 .up-button.shown {
   display: block;
 }
- 
- 
+
+
 .dropdown {
   position: relative;
   display: inline-block;
