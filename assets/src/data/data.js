@@ -1,0 +1,42 @@
+const newsData = [
+  {
+    id: "1",
+    title: "Нова бібліотека для створення графіків",
+    description: "Тепер можна створити дашборд за лічені секунди.",
+    image: "./assets/img/jpg/new-graph.jpg",
+    category: "#IT",
+    date: "16 жовтня 2024",
+  },
+  {
+    id: "2",
+    title: "А що там у роботів",
+    description: "ТУ робототехниці відбувається багато цікавого...",
+    image: "./assets/img/jpg/new-robot.jpg",
+    category: "#Ігри",
+    date: "16 жовтня 2024",
+  },
+  {
+    id: "3",
+    title: "Нова бібліотека для створення графіків",
+    description: "Тепер можна створити дашборд за лічені секунди.",
+    image: "./assets/img/jpg/new-graph.jpg",
+    category: "#IT",
+    date: "16 жовтня 2024",
+  },
+  {
+    id: "4",
+    title: "А що там у роботів",
+    description: "ТУ робототехниці відбувається багато цікавого...",
+    image: "./assets/img/jpg/new-robot.jpg",
+    category: "#Ігри",
+    date: "16 жовтня 2024",
+  },
+  {
+    id: "5",
+    title: "Нова бібліотека для створення графіків",
+    description: "Тепер можна створити дашборд за лічені секунди.",
+    image: "./assets/img/jpg/new-graph.jpg",
+    category: "#IT",
+    date: "16 жовтня 2024",
+  },
+];
