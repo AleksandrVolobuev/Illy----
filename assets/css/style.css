@@ -692,17 +692,32 @@ body {
 
 /* Стили для контейнера с контактами */
 .page1 {
-  width: 80%;
-  margin: 0 auto;
+  top: 50%;
+  left: 50%;
+  border-radius: 50%;
+  width: 600px;
+  height: 600px;
+ 
+  margin: 5em auto;
   padding: 20px;
-  border: 1px solid #ccc; /* Додано рамку для кращої видимості */
-  border-radius: 10px; /* Зменшено радіус заокруглення */
-  background-color: #f9f9f9; /* Додано фоновий колір */
+  
+ 
+  background-color: #54d10c; /* Додано фоновий колір */
 }
-
+.content-contacts{
+  margin: 10em auto;
+  top: 50%;
+  left: 50%;
+  
+}
+.contacts{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
 /* Стили для заголовков городов */
 .city-header {
-  font-size: 1.4em;
+  font-size: 1.2em;
   font-weight: bold;
   margin-bottom: 15px;
 }
