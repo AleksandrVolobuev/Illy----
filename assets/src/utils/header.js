@@ -30,7 +30,6 @@ function addMenu() {
     list.classList.add("active"); // Додати клас active
 
     iconMenu.src = "./assets/img/jpg/photo_2024-12-07_11-29-00.jpg"; // Змінити іконку на закриття
-
     header.style.alignItems = "flex-start"; // Вирівняти вміст header зверху
 
     btn.classList.add("rotate"); // Додати обертання кнопки

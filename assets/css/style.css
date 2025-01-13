@@ -352,6 +352,11 @@ body {
 .btn-tem {
   margin-left: auto;
   padding: 15px 15px 15px 36px;
+  border-radius: 5px;
+  font-size: 20px;
+}
+
+.violB {
   border: 2px solid var(--vailet);
   background-color: var(--color);
   background-image: url(../img/svg/moon-normal.svg);
@@ -359,7 +364,17 @@ body {
   background-size: 20px;
   background-repeat: no-repeat;
   color: var(--vailet);
-  font-size: 20px;
+}
+
+.darkB {
+  border: 2px solid var(--color);
+  background-color: var(--vailet);
+  background-image: url(../img/svg/moon-hover.svg);
+  background-position: 7% 50%;
+  background-size: 20px;
+  background-repeat: no-repeat;
+  color: var(--color);
+ 
 }
 
 .main {
@@ -526,7 +541,7 @@ body {
   color: black;
 }
 
-.black-grey {
+.grey {
   background-color: rgb(46, 46, 46);
   color: white;
 }
@@ -541,7 +556,7 @@ body {
   background-color: var(--vailet);
 }
 
-.no-violent {
+.violentWhite {
   color: var(--vailet);
   background-color: white;
 }
