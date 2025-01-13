@@ -16,7 +16,6 @@ document.addEventListener("DOMContentLoaded", () => {
 function renderNews(news) {
   const container = document.getElementById("news-container");
   container.innerHTML = `
-  
       <section class="shock">
         <h2 class="h2">${news.shock}</h2>
       </section>
@@ -26,7 +25,7 @@ function renderNews(news) {
           src="${news.image}" alt="${news.title}"
         />
         <p class="par">${news.description} </p>
-      </section>
+      </section>  
   `;
 }
 
