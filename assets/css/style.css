@@ -238,8 +238,10 @@ body {
 }
 
 .news:hover,
-.news-flex:hover {
-  transform: scale(1.02);
+.news-flex:hover ,
+.submit:hover,
+.reset:hover {
+  transform: scale(1.025);
 }
 
 .div-img {
@@ -738,7 +740,6 @@ body {
   padding: 20px;
   border: 1px solid var(--grey);
   border-radius: 10px;
-  background-color: var(--vailet);
   display: flex;
   flex-direction: column;
   gap: 15px;
@@ -768,14 +769,14 @@ textarea {
   padding: 10px;
   border: none;
   border-radius: 5px;
-  background-color: var(--primary-color);
-  color: #fff;
+  /*background-color: var(--primary-color);
+  color: #fff;*/
   font-weight: bold;
 }
 
 .submit:hover,
 .reset:hover {
-  background-color: var(--primary-color-dark);
+  background-color: var(--vailet);
 }
 
 /* Медиа-запрос для более мелких экранов */
