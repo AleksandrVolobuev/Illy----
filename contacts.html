@@ -19,7 +19,7 @@
     <script src="./assets/src/utils/up_button.js" defer></script>
     <title>Контакти</title>
   </head>
-  <body class="body biruza" data-theme="biruza" style="background-image: url(./assets/img/jpg/hkm.png);">
+  <body class="body biruza" data-theme="biruza">
     <header class="heder" data-theme="white">
       <div class="div-logo-heder">
         <a href="./index.html" class="return-main-page" data-theme="white"
@@ -33,9 +33,8 @@
     <section class="main">
       <div class="page1">
         <div class="content-contacts">
-          
           <div class="contacts">
-            <!--<h3>КОНТАКТИ</h3>-->
+            <h3 class="h1">КОНТАКТИ</h3>
             <div class="col-center">
               <p class="city-header">м. Запоріжжя</p>
               <p class="contact-info">вул.Шкільна 56</p>
@@ -51,28 +50,87 @@
               <p class="contact-info">вул.Північний бул-р 5 "Б"</p>
               <p class="contact-info">(099) 23-11-519</p>
             </div>
+            <div class="col-center">
+              <p class="contact-info">e-mail: kompschool@gmail.com</p>
+            </div>
+            <p class="contact-info">
+              Для того, щоб відправити нам повідомлення, заповніть будь-ласка
+              форму нижче.
+            </p>
+            <p class="type-3">
+              Якщо ви хочете записатися на безкоштовний пробний урок,
+              майстер-клас або на навчання, вкажіть це в темі повідомлення і наш
+              менеджер з вами зв'яжеться. Дякуємо!
+            </p>
+            <form id="form" class="form_contacts">
+              <div class="row">
+                <input
+                  id="name"
+                  name="name"
+                  placeholder="Ваше ім'я:"
+                  required
+                  type="text"
+                  title="Заповніть це поле."
+                />
+                <input
+                  id="email"
+                  name="email"
+                  placeholder="E-mail:"
+                  required
+                  type="email"
+                  title="Заповніть це поле."
+                />
+              </div>
+              <textarea
+                id="message"
+                name="message"
+                placeholder="Повідомлення:"
+                required
+                title="Заповніть це поле."
+              ></textarea>
+              <div class="row">
+                <input id="code" size="4" disabled type="text" value="3635" />
+                <input
+                  id="captcha"
+                  name="captcha"
+                  placeholder="Введіть код:"
+                  maxlength="4"
+                  size="4"
+                  type="text"
+                  title="Заповніть це поле."
+                />
+              </div>
+              <div class="row">
+                <input
+                  class="submit"
+                  value="ВІДПРАВИТИ >"
+                  type="submit"
+                  title="Відправити"
+                />
+                <input
+                  class="reset"
+                  value="ОЧИСТИТИ >"
+                  type="reset"
+                  title="Очистити"
+                />
+              </div>
+            </form>
           </div>
-          <div class="col-center"><p class="contact-info">e-mail: kompschool@gmail.com</p></div>
-          <p class="contact-info">Для того, щоб відправити нам повідомлення, заповніть будь-ласка форму нижче.</p>
-          <form id="form">
-            <input id="name" name="name" placeholder="Ваше ім'я:" required="" type="text" title="Заповніть це поле.">
-            <input id="email" name="email" placeholder="E-mail:" required="" type="email" title="Заповніть це поле.">
-            <textarea id="message" name="message" placeholder="Повідомлення:" required="" title="Заповніть це поле."></textarea>
-            <input id="code" size="4" disabled="" type="text" value="3635">
-            <input id="captcha" name="captcha" placeholder="Введіть код:" maxlength="4" size="4" type="text" title="Заповніть це поле.">
-            <input class="submit" value="ВІДПРАВИТИ >" type="submit" title="Відправити">
-            <input class="reset" value="ОЧИСТИТИ >" type="reset" title="Очистити">
-          </form>
-          <p class="type-3" id="down1" name="down1">Якщо ви хочете записатися на безкоштовний пробний урок, майстер-клас або на навчання, вкажіть це в темі повідомлення і наш менеджер з вами зв'яжеться. Дякуємо!</p>
         </div>
-
       </div>
-      <section class="futer">
-        <div class="div-logo-futer">
-          <div class="w-layout-hflex block-name">© 2024 Flash News. Всі права захищені.</div>
-          <img class="img-svg-futer" src="./assets/img/svg/white-logo.svg" alt="">
+    </section>
+    <section class="futer">
+      <div class="div-logo-futer">
+        <div class="w-layout-hflex block-name">
+          © 2024 Flash News. Всі права захищені.
         </div>
-      </section>
-      <button class="up-button">↑</button>
+        <img
+          class="img-svg-futer"
+          src="./assets/img/svg/white-logo.svg"
+          alt=""
+        />
+      </div>
+    </section>
+    <button class="up-button">↑</button>
   </body>
 </html>
