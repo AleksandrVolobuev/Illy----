@@ -14,12 +14,16 @@
     <script src="./assets/src/utils/button_dropdown.js" defer></script>
     <script src="./assets/src/rendering/rendering.js" defer></script>
     <script src="./assets/src/utils/switch_svg_clickBTN.js" defer></script>
+    <script src="./assets/src/utils/theme _button.js" defer></script>
   </head>
-  <body class="body">
-    <header class="heder">
+  <body class="body" data-theme="biruza">
+    <header class="heder" data-theme="white">
       <div class="div-logo-heder">
         <img class="img-logo" src="./assets/img/svg/main-logo.svg" alt="" />
         <nav class="header_nav">
+          <div class="tem_right">
+            <button class="btn-tem violB" data-theme="violB">Змінити тему</button>
+          </div>    
           <button type="button" class="btn-navigechen">
             <img
               src="./assets/img/svg/menu-open-light.svg"
@@ -52,7 +56,7 @@
         </div>
       </div>
       <div class="grid-news tile-view">
-        <div class="news clickable" data-id="1" data-url="./news.html">
+        <div class="news clickable" data-id="1" data-url="./news.html" data-theme="white">
           <div class="div-img">
             <img class="img-blok-grid" src="./assets/img/jpg/new-graph.jpg" alt="" />
           </div>
@@ -65,7 +69,7 @@
             </div>
           </div>
         </div>
-        <div class="news clickable" data-id="2" data-url="./news.html">
+        <div class="news clickable" data-id="2" data-url="./news.html" data-theme="white">
           <div class="div-img">
             <img class="img-blok-grid" src="./assets/img/jpg/new-robot.jpg" alt="" />
           </div>
@@ -78,7 +82,7 @@
             </div>
           </div>
         </div>
-        <div class="news clickable" data-id="3" data-url="./news.html">
+        <div class="news clickable" data-id="3" data-url="./news.html" data-theme="white">
           <div class="div-img">
             <img class="img-blok-grid" src="./assets/img/jpg/new-loop.jpg" alt="" />
           </div>
@@ -91,7 +95,7 @@
             </div>
           </div>
         </div>
-        <div class="news clickable" data-id="4" data-url="./news.html">
+        <div class="news clickable" data-id="4" data-url="./news.html" data-theme="white">
           <div class="div-img">
             <img class="img-blok-grid" src="./assets/img/jpg/new-drone.jpg" alt="" />
           </div>
@@ -104,7 +108,7 @@
             </div>
           </div>
         </div>
-        <div class="news clickable" data-id="5" data-url="./news.html">
+        <div class="news clickable" data-id="5" data-url="./news.html" data-theme="white">
           <div class="div-img">
             <img class="img-blok-grid" src="./assets/img/jpg/new-research.jpg" alt="" />
           </div>
@@ -117,9 +121,22 @@
             </div>
           </div>
         </div>
+        <div class="news clickable" data-id="6" data-url="./news.html" data-theme="white">
+          <div class="div-img">
+            <img class="img-blok-grid" src="./assets/img/jpg/wot.jpg" alt="" />
+          </div>
+          <div class="div-block-text">
+            <h3 class="h3-grid">Оновлення 1.27.1: ПОДВІЙНА НЕБЕЗПЕКА</h3>
+            <p class="par-grid">Британські важкі танки зі спареними гарматами.</p>
+            <div class="div-block-giid">
+              <div class="block-link">#Ігри</div>
+              <div class="text-data">16 жовтня 2024</div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
-    <section class="futer">
+    <section class="futer" data-theme="white">
       <div class="div-logo-futer">
         <div class="w-layout-hflex block-name">© 2024 Flash News. Всі права захищені.</div>
         <img class="img-svg-futer" src="./assets/img/svg/white-logo.svg" alt="">
